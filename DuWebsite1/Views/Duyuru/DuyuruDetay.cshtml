@@ -1,0 +1,59 @@
+﻿@model Duyuru
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/assets/css/benimcss.css" rel="stylesheet" />
+<hr />
+
+
+
+
+<main role="main" class="container">
+    <h1 class="mt-5">
+        @Model.DuyuruAdi
+    </h1>
+    <div class="duzendiv2">
+        <small>
+            @Model.YayinTarihi
+
+        </small>
+        <hr />
+        &nbsp;
+    </div>
+
+    <p class="lead">
+        @Model.Aciklama
+        </code>
+    </p>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+<hr />
+</main>
+
+@*<footer class="footer">
+    <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+    </div>*@
+
+
+
+
+
+    @*<div class="col-md-12">
+
+        <h2>
+            @Model.DuyuruAdi
+        </h2>
+        &nbsp;
+
+
+        <div class="paragraf">
+            @Model.Aciklama
+
+        </div>
+
+
+
+    </div>*@
+

@@ -1,0 +1,196 @@
+﻿@model Admin
+
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+
+
+
+<link href="~/LoginNew/loginNew.css" rel="stylesheet" />
+<a href="https://front.codes/" class="logo" target="_blank">
+    <img src="https://assets.codepen.io/1462889/fcy.png" alt="">
+</a>
+
+<div class="section">
+    <div class="container">
+        <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                    <h6 class="mb-0 pb-3"><span>Giriş Yap </span><span>Kayıt Ol</span></h6>
+                    <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                    <label for="reg-log"></label>
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 pb-3">Giriş Yap</h4>
+                                        @using (Html.BeginForm("Control", "Admin", FormMethod.Post))
+                                        {
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1" class="control-label col-md-4">Kullanıcı Adı</label>
+                                        @*<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">*@
+                                        @Html.TextBox("KullaniciAdi", null, new { @class = "form-control" })
+                                        <i class="input-icon uil uil-at"></i>
+                                        &nbsp;
+
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="exampleInputEmail1" class="control-label col-md-3">Şifre</label>
+                                        @*<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">*@
+                                        @Html.TextBox("Sifre", null, new { @class = "form-control" })
+                                        <i class="input-icon uil uil-lock-alt"></i>
+                                        &nbsp;
+
+                                    </div>
+
+                                    <button type="submit" class="form-control btn btn-primary submit px-3">Giriş Yap</button>
+                                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 pb-3">Kullanıcı Ekle</h4>
+                                        @using (Html.BeginForm("KullaniciEkle", "Admin", FormMethod.Post))
+                                        {
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1" class="control-label col-md-4">Kullanıcı Adı</label>
+                                        @*<input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">*@
+                                        @Html.TextBox("KullaniciAdi", null, new { @class = "form-control" })
+
+                                        <i class="input-icon uil uil-user"></i>
+                                        &nbsp;
+
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="exampleInputEmail1" class="control-label col-md-3">Şifre</label>
+                                        @*<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">*@
+                                        @Html.TextBox("Sifre", null, new { @class = "form-control" })
+
+                                        <i class="input-icon uil uil-at"></i>
+                                        &nbsp;
+
+                                    </div>
+                                           
+                                            <button type="submit" class="form-control btn btn-primary submit px-3">Kayıt ol</button>
+
+                                            @*<a href="#" class="btn mt-4">submit</a>*@
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link href="~/assets/css/benimcss.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />-->
+<!------ Include the above in your HEAD tag ---------->
+<!--@using (Html.BeginForm("Control", "Admin", FormMethod.Post))
+{
+
+
+
+    <div class="col-md-3" >
+
+        <h2>Giriş Sayfası</h2>
+        <hr />
+
+        <div class="form-" >
+
+
+
+
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="control-label col-md-4">Kullanıcı Adı</label>
+                <div class="col-md-9">
+                    @Html.TextBox("KullaniciAdi", null, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="control-label col-md-3">Şifre</label>
+                <div class="col-md-9">
+                    @Html.TextArea("Sifre", null, new { @class = "form-control" })
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+}-->
