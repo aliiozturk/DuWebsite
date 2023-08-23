@@ -11,5 +11,4 @@ Proje içersinde bir üniversite sayfasının genel işlevlerini barındıran ö
 işlemlerini gerçekleştirebileceğimiz bir admin sayfası tasarlanmış ve genel olarak duyuruların da efektif bir şekilde görülebileceği bir website tasarlanmıştır.<br/> 
 - Kullanılan teknolojiler: <br/>
 `Html`, `Css`, `Bootstrap`, `EntityFramework Core`, `Razor View Engine`,`Dependency Injection`,`JavaScript ve CSS Kütüphaneleri`,`Veritabanı Sistemleri.`
-<br/>
-![Website Anasayfa](https://github.com/HalilAtes/UniversityWebsiteProject/blob/master/DuWebsite1/images/image1.png)
+<br/> ![Website Anasayfa](https://github.com/HalilAtes/UniversityWebsiteProject/blob/master/DuWebsite1/images/image1.png)
